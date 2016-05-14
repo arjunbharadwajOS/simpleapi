@@ -19,10 +19,6 @@ app.get('/Sum', function(req,res) {
 	res.send(sumtext);
 });
 
-app.get('/open', function(req,res) {
 
-	var Imgtext = 'Open Image =  ' + routes.execImage() + '';
-	res.send(Imgtext);
-});
 
 app.listen(3000);

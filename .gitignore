@@ -1,0 +1,13 @@
+/olympic.iml
+target/
+build/
+/node_modules
+.idea
+apiproxy/resources/node/node_modules
+*.suo
+*.njsproj
+.ntvs_analysis.dat
+*.sln
+bin/
+obj/
+development.json

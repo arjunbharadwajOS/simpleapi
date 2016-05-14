@@ -18,21 +18,9 @@ module.exports = {
 
 calculateSum : function(a,b) {
 return (a+b);
-},
-
-execImage : function() {
-   var Image = '/Users/vincentkoh/Desktop/APIs/IMG_0267.PNG';
-   child_process.exec('open -a /Applications/Preview.app ' + Image, function (err, stdout, stderr){
-    if (err) {
-        console.log("child processes failed with error code: " +
-            err.code);
-    }
-    console.log(stdout);
-    });
-    
-    return Image;
-
 }
+
+
 
 };
 
