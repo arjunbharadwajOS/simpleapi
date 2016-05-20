@@ -18,7 +18,7 @@ module.exports = {
 
 calculateSum : function(a,b) {
 return (a+b);
-}
+},
 
  execSeeTest : function() {
   var scriptPath = '/Users/arjunbharadwaj/Desktop/apis/seetest.js';
