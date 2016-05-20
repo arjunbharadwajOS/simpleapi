@@ -20,6 +20,33 @@ calculateSum : function(a,b) {
 return (a+b);
 }
 
+ execSeeTest : function() {
+  var scriptPath = '/Users/arjunbharadwaj/Desktop/apis/seetest.js';
+  child_process.exec('node ' + scriptPath, function (err, stdout, stderr){
+   if (err) {
+    console.log("child processes failed with error code: " +
+        err.code);
+   }
+   console.log(stdout);
+  });
+
+  return scriptPath;
+
+ },
+
+ execSelenium : function() {
+  var scriptPath = '/Users/arjunbharadwaj/Desktop/apis/selenium.js';
+  child_process.exec('node ' + scriptPath, function (err, stdout, stderr){
+   if (err) {
+    console.log("child processes failed with error code: " +
+        err.code);
+   }
+   console.log(stdout);
+  });
+
+  return scriptPath;
+
+ }
 
 
 };
