@@ -29,9 +29,15 @@ app.get('/selenium', function(req,res) {
 app.get('/seetest', function(req,res) {
 
     var seetest = 'SeeTest Exec Script =  ' + routes.execSeeTest() + '';
-    res.send(Imgtext);
+    res.send(seetest);
 });
 
+
+app.get('/accessKey', function(req,res) {
+
+    routes.execAccessKey(req,res);
+    
+});
 
 
 app.listen(3000);

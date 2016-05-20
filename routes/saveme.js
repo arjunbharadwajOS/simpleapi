@@ -46,8 +46,20 @@ return (a+b);
 
   return scriptPath;
 
- }
+ },
 
+ execAccessKey : function(req, res) {
+
+ var crypto = require('crypto');
+ var apikey = 'DsETWlVjmXs5O4al5njsKZe0YFPeE2Jk';
+ var apisecret = '9KdPmHhob7WRc5wG';
+
+ var authkey = new Buffer(apikey + ':' + ~~ (new Date().getTime()/1000)).toString('base64');
+ var authdigest = crypto.createHmac('sha1', apisecret).update(authkey).digest('hex');
+
+ res.json({ AuthenticationKey: authkey, AuthenticationDigest: authdigest });
+
+}
 
 };
 
