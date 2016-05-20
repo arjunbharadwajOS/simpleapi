@@ -19,6 +19,19 @@ app.get('/Sum', function(req,res) {
 	res.send(sumtext);
 });
 
+app.get('/selenium', function(req,res) {
+
+    var selenium = 'Selenium Exec Script =  ' + routes.execSelenium() + '';
+    res.send(selenium);
+});
+
+
+app.get('/seetest', function(req,res) {
+
+    var seetest = 'SeeTest Exec Script =  ' + routes.execSeeTest() + '';
+    res.send(Imgtext);
+});
+
 
 
 app.listen(3000);
