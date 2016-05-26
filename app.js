@@ -5,6 +5,8 @@ var routes = require('./routes/saveme');
 
 //app.use(routes.requestTime);
 
+//Get Time Function
+
 app.get('/Time', function (req, res) {
   
   console.log('Time is = ' + routes.formatDate());
