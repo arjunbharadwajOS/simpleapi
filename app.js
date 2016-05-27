@@ -14,6 +14,8 @@ app.get('/Time', function (req, res) {
   res.send(responseText);
 });
 
+//Get Time Function
+
 app.get('/Sum', function(req,res) {
 
 	console.log('Sum of = ' + routes.calculateSum(1,3));
