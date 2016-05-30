@@ -29,6 +29,7 @@ app.get('/selenium', function(req,res) {
     res.send(selenium);
 });
 
+//See test function to execute
 
 app.get('/seetest', function(req,res) {
 
